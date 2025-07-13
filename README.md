@@ -40,7 +40,7 @@ df = df.withColumn("Revenue",
 )
 
 ### Query 2: Total Passengers by Pickup Area
-
+```python
 df.select("Revenue").show(5)
 df.groupBy("PULocationID") \
   .sum("passenger_count") \
@@ -49,6 +49,7 @@ df.groupBy("PULocationID") \
   .show()
 
 ###Query 3: Average Fare / Total Earnings by Vendor
+```python
 df.groupBy("VendorID") \
   .avg("fare_amount", "total_amount") \
   .withColumnRenamed("avg(fare_amount)", "average_fare") \
