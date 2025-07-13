@@ -118,7 +118,4 @@ df_recent.groupBy("PULocationID")   .sum("passenger_count")   .withColumnRenamed
 
 ---
 
-## 📌 Notes
-- Run all queries in Databricks or PySpark environment.
-- Dataset must be loaded as a DataFrame before executing queries.
-- Ensure correct timestamp format for time-based queries.
+
